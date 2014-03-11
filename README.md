@@ -1,7 +1,9 @@
 # Authenticating with Google
 
-* [A gem containing a generic OAuth2 strategy for OmniAuth](https://github.com/intridea/omniauth-oauth2) 
+See these links:
+
 * [Strategy to authenticate with Google via OAuth2 in OmniAuth.](https://github.com/zquestz/omniauth-google-oauth2)
+* [A gem containing a generic OAuth2 strategy for OmniAuth](https://github.com/intridea/omniauth-oauth2) 
 
 Get your API key at: 
 
