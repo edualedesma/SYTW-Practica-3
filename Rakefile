@@ -1,6 +1,6 @@
 desc "Run server"
 task :default => :use_keys do
-  sh "ruby signin.rb"
+  sh "rackup"
 end
 
 desc "Save config.yml out of the CVS"
