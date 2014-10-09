@@ -14,7 +14,7 @@ task :use_keys do
 end
 
 desc "Go to console.developers.google"
-task :link do
+task :googleconsole do
   #sh "open https://console.developers.google.com/project/apps~sinatra-ruby-gplus/apiui/api"
   sh "open https://console.developers.google.com/project/corded-observer-516/"
 end
@@ -25,13 +25,18 @@ task :ci, [ :message ] => :keep_secrets do |t, args|
   sh "git ci -am '#{message}'"
 end
 
-desc "Revoke access"
+desc "Go to Google security page"
 task :revoke do
   #sh "open https://security.google.com/settings/security/permissions?pli=1"
   sh "open https://security.google.com/settings/security"
 end
 
-desc "Go to console.developers.google credentials"
-task :link do
-  sh "https://console.developers.google.com/project/corded-observer-516/apiui/credential"
+desc "Open browser in googles console for this project"
+task :googlecredentials do
+  sh "open https://console.developers.google.com/project/corded-observer-516/apiui/credential"
+end
+
+desc "Open browser in github repo"
+task :github do
+  sh "open https://github.com/crguezl/omniauth-google-oauth2-sample"
 end
