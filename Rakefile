@@ -15,7 +15,8 @@ end
 
 desc "Go to console.developers.google"
 task :link do
-  sh "open https://console.developers.google.com/project/apps~sinatra-ruby-gplus/apiui/api"
+  #sh "open https://console.developers.google.com/project/apps~sinatra-ruby-gplus/apiui/api"
+  sh "open https://console.developers.google.com/project/corded-observer-516/"
 end
 
 desc "Commit changes"
@@ -28,4 +29,9 @@ desc "Revoke access"
 task :revoke do
   #sh "open https://security.google.com/settings/security/permissions?pli=1"
   sh "open https://security.google.com/settings/security"
+end
+
+desc "Go to console.developers.google credentials"
+task :link do
+  sh "https://console.developers.google.com/project/corded-observer-516/apiui/credential"
 end
