@@ -23,3 +23,9 @@ task :ci, [ :message ] => :keep_secrets do |t, args|
   message = args[:message] || ''
   sh "git ci -am '#{message}'"
 end
+
+desc "Revoke access"
+task :revoke do
+  #sh "open https://security.google.com/settings/security/permissions?pli=1"
+  sh "open https://security.google.com/settings/security"
+end
