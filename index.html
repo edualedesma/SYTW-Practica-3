@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Sytw-practica-3 : Autenticación con Google usando Omniauth">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sytw-practica-3</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alu3286/SYTW-Practica-3">View on GitHub</a>
+
+          <h1 id="project_title">Sytw-practica-3</h1>
+          <h2 id="project_tagline">Autenticación con Google usando Omniauth</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alu3286/SYTW-Practica-3/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alu3286/SYTW-Practica-3/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="sistemas-y-tecnolog%C3%ADas-web---pr%C3%A1ctica-3-autenticaci%C3%B3n-con-google" class="anchor" href="#sistemas-y-tecnolog%C3%ADas-web---pr%C3%A1ctica-3-autenticaci%C3%B3n-con-google"><span class="octicon octicon-link"></span></a>Sistemas y Tecnologías Web - Práctica 3: Autenticación con Google</h1>
+
+<p><strong>Autor: Eduardo Javier Acuña Ledesma</strong></p>
+
+<h2>
+<a name="descripci%C3%B3n" class="anchor" href="#descripci%C3%B3n"><span class="octicon octicon-link"></span></a>Descripción</h2>
+
+<p>Nos autenticaremos en la aplicación usando Google vía OAuth en OmniAuth.
+Primero obtén tu API key en: <a href="https://code.google.com/apis/console/">https://code.google.com/apis/console/</a>. Tienes que anotar el <em>Client ID</em> y el <em>Client Secret</em>. Habilitamos las APIs de Google que vayamos a usar.</p>
+
+<h2>
+<a name="instalaci%C3%B3n" class="anchor" href="#instalaci%C3%B3n"><span class="octicon octicon-link"></span></a>Instalación</h2>
+
+<ol>
+<li><p>Lo primero que haremos será clonar el repositorio de github <a href="https://github.com/alu3286/SYTW-Practica-3">SYTW-Practica-3</a> de la siguiente forma:
+<code>git clone git@github.com:alu3286/SYTW-Practica-3.git</code></p></li>
+<li><p>Instalaremos las gemas necesarias: <code>bundle install</code></p></li>
+<li><p>Configuraremos el fichero <code>config/config.yml</code> siguiendo las directrices del fichero <code>config/config_template.yml</code>. Crear también el fichero <code>config/config_filled.yml</code>.</p></li>
+</ol>
+
+<p>Una vez hecho esto, podemos ejecutar la aplicación así:</p>
+
+<ol>
+<li><code>rake</code></li>
+</ol>
+
+<p>Luego, iremos a <a href="http://localhost:9292/">http://localhost:9292/</a> para poder usar la aplicación.</p>
+
+<h2>
+<a name="despliegue-en-heroku" class="anchor" href="#despliegue-en-heroku"><span class="octicon octicon-link"></span></a>Despliegue en Heroku</h2>
+
+<p>He desplegado la aplicación en Heroku. Para poder acceder a la página pincharemos <a href="http://googleoauth-eduardo.herokuapp.com/">aquí</a>. </p>
+
+<p>Ver estos enlaces:</p>
+
+<ul>
+<li><a href="https://github.com/zquestz/omniauth-google-oauth2">Strategy to authenticate with Google via OAuth2 in OmniAuth.</a></li>
+<li>
+<a href="https://github.com/intridea/omniauth-oauth2">A gem containing a generic OAuth2 strategy for OmniAuth</a> </li>
+</ul>
+
+<p>Para más detalles, lee la documentación de Google: </p>
+
+<p><a href="https://developers.google.com/accounts/docs/OAuth2">https://developers.google.com/accounts/docs/OAuth2</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Sytw-practica-3 maintained by <a href="https://github.com/alu3286">alu3286</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
