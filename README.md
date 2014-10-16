@@ -25,6 +25,7 @@ Luego, iremos a [http://localhost:9292/](http://localhost:9292/) para poder usar
 
 ##Despliegue en Heroku
 
+He desplegado la aplicación en Heroku. Para poder acceder a la página pincharemos [aquí](http://googleoauth-eduardo.herokuapp.com/). 
 
 
 Ver estos enlaces:
