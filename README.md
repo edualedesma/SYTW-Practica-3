@@ -28,6 +28,7 @@ Luego, iremos a [http://localhost:9292/](http://localhost:9292/) para poder usar
 He desplegado la aplicación en Heroku. Para poder acceder a la página pincharemos [aquí](http://googleoauth-eduardo.herokuapp.com/). 
 
 
+
 Ver estos enlaces:
 
 * [Strategy to authenticate with Google via OAuth2 in OmniAuth.](https://github.com/zquestz/omniauth-google-oauth2)
