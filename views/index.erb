@@ -1,12 +1,42 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-  <pre>
-<%= @auth.inspect.to_yaml %>
-  </pre>
-</body>
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<title>Autenticación con Google</title>
+	    
+	    <!-- Bootstrap core CSS -->
+	    <link href="/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Custom styles for this template -->
+	    <link href="/css/cover.css" rel="stylesheet">
+  	</head>
+  	<body>
+    	<div class="site-wrapper">
+      		<div class="site-wrapper-inner">
+        		<div class="cover-container">
+        			<div class="inner cover">
+	          			<% @imagen = @auth['info'].image %>
+	            		<% @imagen.slice! "sz=50" %>
+			            <div class="header col-xs-12 col-lg-4 col-sm-3 col-lg-offset-4 col-sm-offset-4">
+			            	<img class="myimg img-responsive img-circle" src="<%= @imagen %> "> 
+			            	<p> <strong id=""> Nombre: </strong><%= @auth['info'].first_name %> </p>
+				            <p> <strong id=""> Apellidos: </strong><%=  @auth['info'].last_name %> </p>
+				            <p> <strong id=""> Email: </strong><%= @auth['info'].email %> </p>
+				        </div>
+		          	</div>
+		          	<div class="mastfoot">
+		          		<div class="inner">
+		            		<p>Desarrollada por <a href="https://github.com/alu3286">Eduardo Javier Acuña Ledesma</a></p>
+		            	</div>
+		         	</div>
+        		</div>
+      		</div>
+    	</div>
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
+	    <script src="/js/docs.min.js"></script>
+  	</body>
 </html>
