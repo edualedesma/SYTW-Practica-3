@@ -1,4 +1,4 @@
 config/config_filled.yml
-#config/config.yml
+config/config.yml
 client_secret*
 .DS_Store
